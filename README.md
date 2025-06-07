@@ -1,6 +1,6 @@
 # Resultados do Teste de NodeJs do Bootcamp 13
 
-## Listas de Tarefas
+## Lista de Tarefas
 
 - [x] should be able to create a new repository: Para que esse teste passe, sua aplicação deve permitir que um repositório seja criado, e retorne um json com o projeto criado.
 - [x] should be able to list the repositories: Para que esse teste passe, sua aplicação deve permitir que seja retornado um array com todos os repositórios que foram criados até o momento.

@@ -10,6 +10,10 @@ app.use(cors());
 
 const repositories = [];
 
+function resetRepositories() {
+  repositories.length = 0;
+}
+
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
 });
@@ -86,3 +90,5 @@ app.post("/repositories/:id/like", (request, response) => {
 });
 
 module.exports = app;
+module.exports.repositories = repositories;
+module.exports.resetRepositories = resetRepositories;

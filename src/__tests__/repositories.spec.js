@@ -3,6 +3,9 @@ const app = require("../app");
 const { isUuid } = require("uuidv4");
 
 describe("Repositories", () => {
+  beforeEach(() => {
+    app.resetRepositories();
+  });
   it("should be able to create a new repository", async () => {
     const response = await request(app)
       .post("/repositories")

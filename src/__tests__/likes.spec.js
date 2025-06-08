@@ -2,6 +2,9 @@ const request = require("supertest");
 const app = require("../app");
 
 describe("Likes", () => {
+  beforeEach(() => {
+    app.resetRepositories();
+  });
   it("should be able to give a like to the repository", async () => {
     const repository = await request(app)
       .post("/repositories")
